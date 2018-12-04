@@ -31,6 +31,16 @@
                 android:name=".SettingsActivity"
                 android:label="@string/title_activity_settings">
         </activity>
+        <activity
+                android:name=".ActivityMySettings"
+                android:label="@string/title_activity_my_settings"
+                android:theme="@style/AppTheme">
+        </activity>
+        <activity
+                android:name=".ActivityProfile"
+                android:label="@string/title_activity_profile"
+                android:theme="@style/AppTheme">
+        </activity>
     </application>
 
 </manifest>

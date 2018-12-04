@@ -31,8 +31,19 @@ class ActivityBottomNav : AppCompatActivity() {
         setContentView(R.layout.activity_bottom_nav)
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+
         ivSettings.setOnClickListener {
-            val intent = Intent(this@ActivityBottomNav, ActivityBottomNav::class.java)
+            val intent = Intent(this@ActivityBottomNav, ActivityMySettings::class.java)
+            startActivity(intent)
+        }
+
+        ivProfilePic.setOnClickListener {
+            val intent = Intent(this@ActivityBottomNav, ActivityProfile::class.java)
+            startActivity(intent)
+        }
+
+        ivLogoButton.setOnClickListener {
+            val intent = Intent(this@ActivityBottomNav, ActivityProfile::class.java)
             startActivity(intent)
         }
     }
